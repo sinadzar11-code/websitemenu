@@ -1,0 +1,189 @@
+<!-- ==========================================================================
+       4. BAGIAN MENU MAKANAN (MENU LENGKAP 5 NEGARA)
+       ========================================================================== -->
+  <section class="menu-section section-padding" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">
+          <i class="fa-solid fa-book-open"></i> Pilihan Global
+        </div>
+        <h2 class="section-title">Menu Autentik 5 Negara</h2>
+        <p class="section-subtitle">
+          Nikmati aneka hidangan pilihan dari Indonesia, Jepang, Korea, Rusia, dan Belanda dengan cita rasa terbaik.
+        </p>
+      </div>
+
+      <!-- CSS GRID: Menampilkan Menu Lengkap -->
+      <div class="menu-grid" id="menu-product-grid">
+
+        <!-- INDONESIA -->
+        <article class="menu-card" data-category="indonesia" id="product-1">
+          <div class="card-media">
+            <img src="images/rendang.jpg" alt="Rendang Daging" loading="lazy">
+            <div class="card-badge-top">
+              <span class="badge-tag badge-category">Indonesia</span>
+              <span class="badge-tag badge-bestseller">Favorit</span>
+            </div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 5.0</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Rendang Daging Sapi</h3>
+            <p class="product-desc">Daging sapi empuk dimasak perlahan bersama santan dan rempah pilihan khas Minang.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 40.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Rendang Daging Sapi', 40000, 'images/rendang.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="indonesia" id="product-2">
+          <div class="card-media">
+            <img src="images/sate.jpg" alt="Sate Ayam" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Indonesia</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Sate Ayam Bumbu Kacang</h3>
+            <p class="product-desc">Sate daging ayam dibakar harum dengan arang, disiram saus kacang gurih manis.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 30.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Sate Ayam Bumbu Kacang', 30000, 'images/sate.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- JEPANG -->
+        <article class="menu-card" data-category="jepang" id="product-3">
+          <div class="card-media">
+            <img src="images/sushi.jpg" alt="Sushi" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Jepang</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Sushi Platter</h3>
+            <p class="product-desc">Aneka gulungan nasi sushi segar dengan topping pilihan dan saus khas.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 45.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Sushi Platter', 45000, 'images/sushi.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="jepang" id="product-4">
+          <div class="card-media">
+            <img src="images/ramen.jpg" alt="Ramen" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Jepang</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Chicken Shoyu Ramen</h3>
+            <p class="product-desc">Mie ramen kenyal dalam kuah kaldu shoyu hangat dengan topping ayam dan telur.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 38.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Chicken Shoyu Ramen', 38000, 'images/ramen.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- KOREA -->
+        <article class="menu-card" data-category="korea" id="product-5">
+          <div class="card-media">
+            <img src="images/bulgogi.jpg" alt="Bulgogi" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Korea</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Beef Bulgogi</h3>
+            <p class="product-desc">Irisan daging sapi empuk dimarinasi bumbu manis gurih khas Korea, dipanggang sempurna.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 48.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Beef Bulgogi', 48000, 'images/bulgogi.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="korea" id="product-6">
+          <div class="card-media">
+            <img src="images/bibimbap.jpg" alt="Bibimbap" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Korea</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Korean Bibimbap</h3>
+            <p class="product-desc">Nasi campur ala Korea dengan aneka sayuran segar, daging, telur, dan saus gochujang.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 42.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Korean Bibimbap', 42000, 'images/bibimbap.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- RUSIA -->
+        <article class="menu-card" data-category="rusia" id="product-7">
+          <div class="card-media">
+            <img src="images/pelmeni.jpg" alt="Pelmeni" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Rusia</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.8</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Russian Pelmeni</h3>
+            <p class="product-desc">Dumpling atau pangsit kecil khas Rusia isi daging cincang gurih, disajikan dengan mentega atau sour cream.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 35.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Russian Pelmeni', 35000, 'images/pelmeni.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="rusia" id="product-8">
+          <div class="card-media">
+            <img src="images/beef-stroganoff.jpg" alt="Beef Stroganoff" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Rusia</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Beef Stroganoff</h3>
+            <p class="product-desc">Irisan daging sapi dan jamur dalam saus krim asam lembut khas Rusia.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 50.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Beef Stroganoff', 50000, 'images/beef-stroganoff.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <!-- BELANDA -->
+        <article class="menu-card" data-category="belanda" id="product-9">
+          <div class="card-media">
+            <img src="images/stampot.jpg" alt="Stampot / Stamepot" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Belanda</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.7</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Dutch Stamppot</h3>
+            <p class="product-desc">Hidangan tradisional Belanda berupa kentang tumbuk lembut dicampur sayuran segar dan sosis lezat.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 38.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Dutch Stamppot', 38000, 'images/stampot.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card" data-category="belanda" id="product-10">
+          <div class="card-media">
+            <img src="images/poffertjes.jpg" alt="Poffertejes" loading="lazy">
+            <div class="card-badge-top"><span class="badge-tag badge-category">Belanda</span></div>
+            <div class="card-rating"><i class="fa-solid fa-star"></i> 4.9</div>
+          </div>
+          <div class="card-body">
+            <h3 class="product-title">Sweet Dutch Poffertjes</h3>
+            <p class="product-desc">Kue pancake mini khas Belanda yang empuk dan manis dengan taburan gula halus dan mentega.</p>
+            <div class="card-footer">
+              <div class="price-wrap"><span class="price-label">Harga</span><span class="product-price">Rp 25.000</span></div>
+              <button class="btn-order-item" onclick="openOrderModal('Sweet Dutch Poffertjes', 25000, 'images/poffertjes.jpg')"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
