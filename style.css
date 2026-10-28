@@ -1,7 +1,7 @@
-/**
- * DAPUR DUNIA - STYLESHEET
- * Website Kuliner Autentik Internasional & Modern
- */
+/* ==========================================================================
+   DAPUR RASA NUSANTARA - STYLESHEET
+   Website Kuliner Autentik Tradisional & Modern
+   ========================================================================== */
 
 /* --- CSS Variables & Design Tokens --- */
 :root {
@@ -1168,6 +1168,7 @@ textarea {
   margin-bottom: 3.5rem;
 }
 
+/* Descendant Selectors for Footer Columns */
 .footer-col h4 {
   font-size: 1.15rem;
   font-weight: 700;
@@ -1410,6 +1411,7 @@ textarea {
 /* ==========================================================================
    9. RESPONSIVE DESIGN (LAPTOP, TABLET & MOBILE)
    ========================================================================== */
+/* Tablet & Small Laptops (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
   .hero-grid {
     gap: 2rem;
@@ -1429,6 +1431,7 @@ textarea {
   }
 }
 
+/* Tablet & Mobile Screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .section-padding {
     padding-top: 4rem;
@@ -1439,6 +1442,7 @@ textarea {
     font-size: 2rem;
   }
 
+  /* Mobile Navbar */
   .mobile-toggle {
     display: block;
   }
@@ -1474,6 +1478,7 @@ textarea {
     display: none;
   }
 
+  /* Hero Mobile */
   .hero-grid {
     flex-direction: column-reverse;
     text-align: center;
@@ -1497,7 +1502,7 @@ textarea {
   }
 
   .floating-badge {
-    display: none;
+    display: none; /* Hide floating badges on smaller screens for cleaner view */
   }
 
   .hero-image-wrapper {
@@ -1509,6 +1514,7 @@ textarea {
     height: 320px;
   }
 
+  /* About Section Mobile */
   .about-grid {
     flex-direction: column;
   }
@@ -1521,6 +1527,7 @@ textarea {
     height: 320px;
   }
 
+  /* Contact Mobile */
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1542,6 +1549,7 @@ textarea {
   }
 }
 
+/* Extra Small Mobile (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 1.85rem;
