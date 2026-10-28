@@ -1,6 +1,6 @@
 /**
- * DAPUR DUNIA - JAVASCRIPT LOGIC
- * Interaktivitas Navigasi, Filter Menu Lintas Negara, Modal Pesanan, & Formulir Reservasi
+ * DAPUR RASA NUSANTARA - JAVASCRIPT LOGIC
+ * Interaktivitas Navigasi, Filter Menu, Modal Pesanan, & Formulir Reservasi
  */
 
 // State Variabel Modal Pesanan
@@ -109,7 +109,7 @@ function initScrollSpy() {
 }
 
 /* ==========================================================================
-   3. FILTER MENU KATEGORI NEGARA (SEMUA / INDONESIA / JEPANG / KOREA / RUSIA / BELANDA)
+   3. FILTER MENU KATEGORI (SEMUA / MAKANAN / MINUMAN)
    ========================================================================== */
 function initMenuFilter() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -199,7 +199,7 @@ function changeModalQty(change) {
 
 function sendOrderViaWhatsApp() {
   const total = currentProduct.price * currentProduct.qty;
-  const message = `Halo Dapur Dunia, saya ingin memesan:\n` +
+  const message = `Halo Dapur Rasa Nusantara, saya ingin memesan:\n` +
                   `- Menu: *${currentProduct.name}*\n` +
                   `- Jumlah: *${currentProduct.qty} porsi*\n` +
                   `- Total: *${formatRupiah(total)}*\n\n` +
@@ -239,6 +239,7 @@ function initReservationForm() {
       const date = document.getElementById('res-date').value;
       const time = document.getElementById('res-time').value;
       const guests = document.getElementById('res-guests').value;
+      const menuPick = document.getElementById('res-menu-pick').value;
 
       if (!name || !phone || !date || !time || !guests) {
         showToast('Mohon lengkapi seluruh kolom yang wajib diisi (*)!');
@@ -246,7 +247,7 @@ function initReservationForm() {
       }
 
       // Simulasi pengiriman reservasi berhasil
-      showToast(`Terima kasih Bapak/Ibu ${name}! Reservasi untuk ${guests} orang pada ${date} pukul ${time} WIB berhasil dikirim. Tim Dapur Dunia akan segera menghubungi via WhatsApp.`);
+      showToast(`Terima kasih Bapak/Ibu ${name}! Reservasi untuk ${guests} pada ${date} pukul ${time} WIB berhasil dikirim. Tim kami akan menghubungi via WhatsApp.`);
       
       form.reset();
       if (dateInput) {
